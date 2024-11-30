@@ -1,0 +1,10 @@
+VS code emmet
+
+1st way to create react by CDN links(CDN React)
+
+react.createElement => an javascript object (any react element is an object)
+
+createElement API take 3 argument(The Tag, The attributes, The children/text/what we want to show)
+This can be one children or an array of multiple children
+
+the render converts it into html and put it into the DOM
