@@ -1,0 +1,49 @@
+NPM -> it does not have a full for. it is everyting but not Node Package Manager
+
+It is manages packages not only node.
+package.json is the configaration file for npm
+
+The most important package in our project in bundler
+Bundler : It is bumdle the app,so that it acn be shiped to production.eg: webpack,parcel,vite
+The "create react-app" uses webpack bundler behind.
+
+We will use parcel in our app.
+npm install -D parcel
+here -D stands for dev-dependencies
+there are 2 type of packages/dependencies
+1. dev dependencies : It is generally require for development purpose
+2. normal dependencies : It is generally for production purpose
+
+in package 
+^ - use for minor upgade autometically (Recomended)
+~ - use for major upgade autometically
+
+package-lock.json : It keeps the track of exact version that are installed.
+
+node-modules : it fetches all the code of all dependencies.It is like a detabase where all the packages/dependencies are exists.
+
+Transitive dependencies: our project have the dependency Parcel. Now Parcel can it own dependencies and that can have their own dependencies. This is called Transitive dependencies.
+
+if we hace package.json and package-lock.json we can regenerate the node_modules by the command "npm install"
+
+npm -> installing a package
+npx -> executing a package
+
+npx parcel index.html ->for dev
+npx parcel build index.html -  for production
+
+parcel is doing->
+dev build for us
+local server for us
+HMR -> hot module replacement
+file waching algorithm - written in c++
+caching thing for us in a space in our project called "parcel cache" - Faster Builds
+Image Optimization
+It will do minification of all files for production
+consistant hashing
+code splitting for us
+differantial bundling - support older browser
+duagonastic behind the scence
+error handling
+it give us https if required
+Tree Shaking Algorithm - remove unused codes for us

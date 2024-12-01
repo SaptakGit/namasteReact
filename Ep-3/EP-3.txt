@@ -1,0 +1,43 @@
+"start": "parcel index.html",
+"build":"parcel build index.html",
+
+custom sripts for starting the project. we can write it under scripts tag inside package.json
+so after this the start command is 
+npm run start or npm start
+before: npx parcel index.html
+after: npm start
+
+
+React Element at the end of the day is an Object.
+When we render this to the DOM then it becomes a HTML element.
+
+core React will create the element.
+ReactDOM will render the element inside root.
+
+JSX is a javascript syntax which is easier to create React elements.It is not part of React.React can be written without JSX. JSX makes core React code easy readable for developers.
+
+JSX this is not HTML in JavaScript, it is JSX, which is a HTML-like syntax. It is not pure JavaScript either. Parcel is transpailing it before it goes to JS Engine. Parcel is a package manager. It has the package Babel, which actually do this transpailing. 
+Babel is a JavaScript compilar/transpailar. It takes the JSX and convert it into the code that JS engine/React understands. We can inject any pure JavaScript code in JSX inside {} brackets. JSX sanitise the dat inside the {} before running it.
+
+React.createElement => ReactElement- JS Object => HTMLElement(render)
+
+JSX => Babel transpile it to React.createElement => ReactElement- JS Object => HTMLElement(render)
+
+If we have to write attributes in JSX we have to write it in Camel Case.
+
+If the JSX is in single lins it is ok.
+But if it is multiple line then we must have to wrap it inside () brackets.
+
+
+// React Component
+Everything is a Component in React.
+There are two types of component in React.
+1. Class based components -> OLD
+        Uses JavaScript Class
+1. Functional components -> NEW
+        Uses JavaScript Functions.
+        It is just  a normal JavaScript Function which returns some JSX. Its function name always starts with capital later.
+
+Calling another Component inside a Component is called Component Composition.
+
+We can write Element inside Component and Component inside Element.
